@@ -1,0 +1,36 @@
+<!---contact.ejs-->
+   <%- include('partials/header.ejs') %>
+<body>
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>
+            Phone: 647-904-7156<br>
+            Email: shaimarb02@gmail.com
+        </p>
+    </div>
+
+    <div class="contact-form">
+        <h3>Contact Form</h3>
+        <form id="contactForm" action="/" method="POST">
+            <!--form content -->
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" size="38"><br><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" size="38.5"><br><br>
+
+            <label for="contactNumber">Contact Number:</label>
+            <input type="text" id="contactNumber" name="contactNumber" size="38"><br><br>
+
+            <label for="email">Email Address</Address>:</label>
+            <input type="text" id="email" name="email" size="35"><br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="1" cols="39"></textarea><br><br>
+            <input type="submit" value="Submit" class="submit-button">
+        </form>
+    </div>
+
+<script src="/scripts/form.js"></script>
+    <%- include('partials/footer.ejs') %>
+
