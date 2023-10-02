@@ -31,6 +31,6 @@ module.exports = ()=> {
     app.use(express.static('./public'));
     app.use(express.static('./node_modules'));
 
-    app.use('/', require('../app/routes'))
+    app.use('/', require('../app/routes/index.js'))
     return app;
 }
